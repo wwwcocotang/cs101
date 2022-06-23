@@ -41,7 +41,6 @@ class MMmanger{
         int* calloc_MM(int size){
             int index,av_size = 0;
             for(index = 0; index < num_of_space; index++){
-                // check array[index] is free or not
                 (!calloced_p[index])?(av_size++):(av_size = 0);
                 if(av_size == size){
                     index -= size-1;
